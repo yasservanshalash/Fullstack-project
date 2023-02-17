@@ -1,0 +1,50 @@
+import { Box, Divider, IconButton, InputBase, Paper, Typography } from "@mui/material";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import MenuIcon from '@mui/icons-material/Menu';
+import { ShoppingBag } from "@mui/icons-material";
+import SearchIcon from '@mui/icons-material/Search';
+
+
+import React from "react";
+
+const NavBar = () => {
+  return (
+    <Paper>
+        <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+        <Box>
+        <Typography variant="h3" sx={{fontFamily: "inherit", mx: 2}}>Betsy</Typography>
+      </Box>
+      <Box sx={{display: "flex", justifyContent: "space-evenly", alignItems: "center", gap: "20px", mx: 2}}>
+        <Typography sx={{fontWeight: "bold"}}>Sign in</Typography>
+        <Typography>🇳🇱</Typography>
+        <IconButton>
+            <FavoriteBorderIcon sx={{color: "black"}}/> 
+        </IconButton>
+        <IconButton>
+            <ShoppingBag sx={{color: "black"}}/> 
+        </IconButton>
+      </Box>
+        </Box>
+        <Box sx={{display: "flex", justifyContent: "space-evenly", py: 2}}>
+            <IconButton>
+                <MenuIcon />
+                </IconButton>
+                <Paper
+      component="form"
+      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
+    >
+      <InputBase
+        sx={{ ml: 1, flex: 1 }}
+        placeholder="Search for anything..."
+        inputProps={{ 'aria-label': 'Search for anything...' }}
+      />
+      <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+        <SearchIcon />
+      </IconButton>
+    </Paper>
+        </Box>
+    </Paper>
+  );
+};
+
+export default NavBar;
