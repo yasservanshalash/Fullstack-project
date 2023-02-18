@@ -7,6 +7,7 @@ import Gifts from '../components/homeComponents/gifts/Gifts'
 import PreFooter from '../components/homeComponents/prefooter/PreFooter'
 import OffersSubscription from '../components/homeComponents/prefooter/OffersSubscription'
 import RenewableEnergy from '../components/homeComponents/prefooter/RenewableEnergy'
+import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
     <Box sx={{width: "100%"}}>
@@ -17,6 +18,7 @@ const Home = () => {
     <PreFooter />
     <OffersSubscription />
     <RenewableEnergy />
+    <Footer />
     </Box>
   )
 }

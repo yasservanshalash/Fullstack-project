@@ -8,7 +8,7 @@ const OffersSubscription = () => {
     <Box
           component="form"
           sx={{
-            p: "4px 20px",
+            p: "4px 10px",
             display: "flex",
             justifyContent:"center",
             alignItems: "center",
