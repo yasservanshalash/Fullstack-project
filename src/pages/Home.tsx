@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar/NavBar'
 import Gifts from '../components/homeComponents/gifts/Gifts'
 import PreFooter from '../components/homeComponents/prefooter/PreFooter'
 import OffersSubscription from '../components/homeComponents/prefooter/OffersSubscription'
-import RenewableEnergy from '../components/homeComponents/prefooter/RenewableEnergy'
+import RenewableEnergy from '../components/Footer/RenewableEnergy'
 import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
@@ -16,8 +16,6 @@ const Home = () => {
     <Popular />
     <Gifts />
     <PreFooter />
-    <OffersSubscription />
-    <RenewableEnergy />
     <Footer />
     </Box>
   )

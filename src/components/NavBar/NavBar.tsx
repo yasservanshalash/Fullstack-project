@@ -15,7 +15,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <Box>
+    <Box sx={{p: 2}}>
       <Box
         sx={{
           display: "flex",
@@ -40,7 +40,7 @@ const NavBar = () => {
           <Typography sx={{ fontWeight: { sx: "lighter", sm: "bold" } }}>
             Sign in
           </Typography>
-          <Typography>🇳🇱</Typography>
+          <Typography sx={{fontSize: "130%"}}>🇪🇺</Typography>
           <IconButton>
             <FavoriteBorderIcon sx={{ color: "black" }} />
           </IconButton>
