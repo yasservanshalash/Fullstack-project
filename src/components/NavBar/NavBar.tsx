@@ -24,7 +24,7 @@ const NavBar = () => {
         }}
       >
         <Box>
-          <Typography variant="h3" sx={{ fontFamily: "inherit", mx: 2, color: "#F1641D" }}>
+          <Typography variant="h4" sx={{ fontFamily: "inherit", mx: 2, color: "#F1641D" }}>
             Betsy
           </Typography>
         </Box>
@@ -33,7 +33,7 @@ const NavBar = () => {
             display: "flex",
             justifyContent: "space-evenly",
             alignItems: "center",
-            gap: "20px",
+            gap: "10px",
             mx: 2,
           }}
         >

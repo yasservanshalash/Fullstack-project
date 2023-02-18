@@ -4,6 +4,9 @@ import Header from '../components/homeComponents/header/Header'
 import Popular from '../components/homeComponents/popularItems/Popular'
 import NavBar from '../components/NavBar/NavBar'
 import Gifts from '../components/homeComponents/gifts/Gifts'
+import PreFooter from '../components/homeComponents/prefooter/PreFooter'
+import OffersSubscription from '../components/homeComponents/prefooter/OffersSubscription'
+import RenewableEnergy from '../components/homeComponents/prefooter/RenewableEnergy'
 const Home = () => {
   return (
     <Box sx={{width: "100%"}}>
@@ -11,6 +14,9 @@ const Home = () => {
     <Header />
     <Popular />
     <Gifts />
+    <PreFooter />
+    <OffersSubscription />
+    <RenewableEnergy />
     </Box>
   )
 }
