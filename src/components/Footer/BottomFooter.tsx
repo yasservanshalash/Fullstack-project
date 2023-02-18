@@ -19,19 +19,19 @@ const BottomFooter = () => {
         <Typography>{footerMessage}</Typography>
         </Box>
         <Box sx={{display: "flex", justifyContent: "space-evenly", color: "white", p: 2}}>
-            <Typography variant='subtitle2' sx={{fontSize: "75%", textDecoration: "underline"}}>
+            <Typography variant='subtitle2' sx={{fontSize: "65%", textDecoration: "underline"}}>
                 Terms of Use
             </Typography>
-            <Typography variant='subtitle2' sx={{fontSize: "75%", textDecoration: "underline"}}>
+            <Typography variant='subtitle2' sx={{fontSize: "65%", textDecoration: "underline"}}>
                 Privacy
             </Typography>
-            <Typography variant='subtitle2' sx={{fontSize: "75%", textDecoration: "underline"}}>
+            <Typography variant='subtitle2' sx={{fontSize: "65%", textDecoration: "underline"}}>
                 Cookies
             </Typography>
-            <Typography variant='subtitle2' sx={{fontSize: "75%", textDecoration: "underline"}}>
+            <Typography variant='subtitle2' sx={{fontSize: "65%", textDecoration: "underline"}}>
             Interest-based ads
             </Typography>
-            <Typography variant='subtitle2' sx={{fontSize: "75%", textDecoration: "underline"}}>
+            <Typography variant='subtitle2' sx={{fontSize: "65%", textDecoration: "underline"}}>
                 Regions
             </Typography>
         </Box>

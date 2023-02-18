@@ -7,15 +7,16 @@ import {
   Typography,
 } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import MenuIcon from "@mui/icons-material/Menu";
 import { ShoppingBag } from "@mui/icons-material";
 import SearchIcon from "@mui/icons-material/Search";
 
 import React from "react";
+import DrawerItem from "../homeComponents/drawer/DrawerItem";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Box sx={{p: 2}}>
+    <Box sx={{p: 1}}>
       <Box
         sx={{
           display: "flex",
@@ -24,8 +25,15 @@ const NavBar = () => {
         }}
       >
         <Box>
-          <Typography variant="h4" sx={{ fontFamily: "inherit", mx: 2, color: "#F1641D" }}>
+          <Typography variant="h4" sx={{ display: {xs: "none", sm :"block"},fontFamily: "inherit", mx: 2, color: "#F1641D", fontWeight:"bold" }}>
+            <Link to="/" style={{textDecoration: "none", color: "#F47D49"}}>
             Betsy
+            </Link>
+          </Typography>
+          <Typography variant="h5" sx={{ display: {xs: "block", sm :"none"}, fontFamily: "inherit", mx: 2, color: "#F1641D", fontWeight:"bold" }}>
+            <Link to="/" style={{textDecoration: "none", color: "#F47D49"}}>
+            Betsy
+            </Link>
           </Typography>
         </Box>
         <Box
@@ -37,23 +45,21 @@ const NavBar = () => {
             mx: 2,
           }}
         >
-          <Typography sx={{ fontWeight: { sx: "lighter", sm: "bold" } }}>
+          <Typography variant="subtitle2" sx={{ fontWeight: { sx: "lighter", sm: "bold" } }}>
             Sign in
           </Typography>
-          <Typography sx={{fontSize: "130%"}}>🇪🇺</Typography>
-          <IconButton>
-            <FavoriteBorderIcon sx={{ color: "black" }} />
+          <Typography sx={{fontSize: "120%"}}>🇪🇺</Typography>
+          <IconButton component={Link} to="/favorites">
+            <FavoriteBorderIcon sx={{ color: "black"}} />
           </IconButton>
-          <IconButton>
+          <IconButton component={Link} to="/cart">
             <ShoppingBag sx={{ color: "black" }} />
           </IconButton>
         </Box>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "space-evenly",alignItems: "center", py: 2 , width: "100%"}}>
         <Box>
-          <IconButton >
-            <MenuIcon sx={{justifySelf: "flex-end", alignSelf: "flex-end"}} />
-          </IconButton>
+          <DrawerItem />
         </Box>
         <Box>
           
@@ -64,6 +70,7 @@ const NavBar = () => {
             p: "2px 4px",
             display: "flex",
             alignItems: "center",
+            justifyContent: "space-between",
             width: 400,
           }}
         >

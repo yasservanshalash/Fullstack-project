@@ -6,7 +6,7 @@ const RenewableEnergy = () => {
     <Box sx={{background:"#4c6bc6", p:5, display: "flex",flexDirection:"column",justifyContent: "center", alignItems: "center"}}>
         <EnergySavingsLeafIcon sx={{color: "white"}}/>
         <Typography sx={{mt: 3, color: "white"}}>
-        Etsy is powered by 100% renewable electricity.
+        Betsy is powered by 100% renewable electricity.
         </Typography>
     </Box>
   )
