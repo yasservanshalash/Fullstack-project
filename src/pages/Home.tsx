@@ -5,8 +5,6 @@ import Popular from '../components/homeComponents/popularItems/Popular'
 import NavBar from '../components/NavBar/NavBar'
 import Gifts from '../components/homeComponents/gifts/Gifts'
 import PreFooter from '../components/homeComponents/prefooter/PreFooter'
-import OffersSubscription from '../components/homeComponents/prefooter/OffersSubscription'
-import RenewableEnergy from '../components/Footer/RenewableEnergy'
 import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
