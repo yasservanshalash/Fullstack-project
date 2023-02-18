@@ -71,6 +71,8 @@ const NavBar = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            flex: "1",
+            flexGrow: "1",
             width: 400,
           }}
         >
