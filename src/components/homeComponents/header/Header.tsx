@@ -4,7 +4,7 @@ import HeaderItem from "./HeaderItem";
 import "./Header.css"
 const Header = () => {
   return (
-    <Box className="header">
+    <Box className="header" sx={{width: {sx: "420px", sm: "100%"}}}>
       <Typography variant="h6" sx={{textAlign: "center", px: 3, py:2, fontWeight: "lighter"}}>
         Find things you'll love. Support independent sellers. Only on Betsy.
       </Typography>
